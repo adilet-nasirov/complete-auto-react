@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
 .App {
   text-align: center;
-  margin-top: 100px;
+  padding-top: 70px;
   display: flex;
   justify-content: center;
 }
 body {
-  background-color: rgb(218, 212, 205);
+  background-image: linear-gradient(80deg, #2fbfc7, #19406d);
+  background-repeat: no-repeat;
+  font-family: "Nunito Sans", sans-serif;
+  height: 100vh;
 }

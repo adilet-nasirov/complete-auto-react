@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
 .container {
-  height: 300px;
+  /* font-family: "Nunito", sans-serif; */
+  font-family: "Nunito Sans", sans-serif;
+  margin-top: 100px;
+  /* height: 300px; */
   width: 350px;
   display: flex;
   flex-direction: column;
@@ -9,15 +14,40 @@
 input {
   font-size: 1.5rem;
   padding: 5px 10px;
+  border: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+input:focus {
+  outline: none;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+}
+.icon {
+  background-color: white;
+  /* width: 10px; */
+  padding: 3px 7px;
+  display: grid;
+  place-items: center;
+  align-self: stretch;
+  /* height: 45px; */
 }
 .movie {
   cursor: pointer;
-  margin: 10px 3px;
+  padding: 10px 3px;
+  margin: 0;
+}
+.movie:hover {
+  background-color: rgb(163, 188, 214);
 }
 
 .output {
   margin-top: 5px;
   background-color: rgb(215, 236, 245);
-  max-height: 200px;
+  max-height: 300px;
+  max-width: 280px;
   overflow: scroll;
 }

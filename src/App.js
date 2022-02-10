@@ -35,6 +35,20 @@ class App extends React.Component {
       this.setState({ currVal: this.state.filteredArr[0].label });
     }
   };
+  searchInput = () => {
+    let val = this.state.currVal;
+    if (val.length !== 0) {
+      const filtered = data.filter((film) =>
+        film.label.toLowerCase().includes(val.toLowerCase())
+      );
+      this.setState({ currVal: val, filteredArr: filtered });
+    } else {
+      this.setState({ filteredArr: [], currVal: "" });
+    }
+  };
+  deleteInput = () => {
+    this.setState({ filteredArr: [], currVal: "" });
+  };
   render() {
     // console.log(this.state);
     return (
@@ -45,6 +59,8 @@ class App extends React.Component {
           fillInput={this.fillInput}
           currVal={this.state.currVal}
           handleEnter={this.handleEnter}
+          deleteInput={this.deleteInput}
+          searchInput={this.searchInput}
         />
       </div>
     );
