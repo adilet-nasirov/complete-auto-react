@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
-# in code sandBox
-# https://codesandbox.io/s/romantic-swirles-hivl4?file=/src/components/Search.jsx
+## u can see or fork from codeSandBox:
+https://codesandbox.io/s/romantic-swirles-hivl4?file=/src/components/Search.jsx
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
